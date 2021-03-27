@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BBAUMEET</string>
+    <string name="meetingurl">ENTER MEETING CODE</string>
+    <string name="CreateRoom">Create</string>
+    <string name="joinRoom">Join</string>
+    <string name="character">Character</string>
+    <string name="background">Background</string>
+    <string name="bmeet">BMEET</string>
+    <string name="welcome_to">WELCOME TO</string>
+</resources>
