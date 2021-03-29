@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.Home.Home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/neumorphCardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView2"
+            android:layout_width="174dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/neumorphCardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:neumorph_backgroundColor="@color/time_col">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextClock
+                        android:id="@+id/textClock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:format12Hour="hh"
+                        android:textAlignment="center"
+                        android:textSize="65sp"
+                        android:textStyle="bold" />
+
+                    <TextClock
+                        android:id="@+id/textClock2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:format12Hour="mm:a"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/day"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="174dp"
+            android:layout_height="174dp"
+            app:neumorph_backgroundColor="@color/meeting_list"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/neumorphCardView"
+            app:layout_constraintEnd_toEndOf="parent" >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/card_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/joinbut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/meetingurl"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:autofillHints="Enter url to start meeting"
+                android:background="@null"
+                android:hint="@string/meetingurl"
+                android:inputType="text"
+                android:letterSpacing="0.2"
+                android:textAlignment="center"
+                android:textColor="@color/blue_col"
+                android:textColorHint="@color/blue_col"
+                android:textSize="15sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/joinbut"
+            android:layout_width="174dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/joinRoom"
+            app:neumorph_backgroundColor="@color/blue_col"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/createroom"
+            android:layout_width="174dp"
+            android:layout_height="70dp"
+            app:neumorph_backgroundColor="@color/blue_col"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/CreateRoom"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

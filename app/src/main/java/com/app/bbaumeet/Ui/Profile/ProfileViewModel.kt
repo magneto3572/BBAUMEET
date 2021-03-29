@@ -1,7 +1,7 @@
-package com.app.bbaumeet.Ui
+package com.app.bbaumeet.Ui.Profile
 
 import androidx.lifecycle.ViewModel
 
-class SettingViewModel : ViewModel() {
+class ProfileViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }
