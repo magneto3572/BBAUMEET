@@ -1,4 +1,4 @@
-package com.app.bbaumeet
+package com.app.bbaumeet.Ui
 
 import android.os.Bundle
 import android.os.Handler
@@ -6,6 +6,7 @@ import android.os.Looper
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.app.bbaumeet.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jitsi.meet.sdk.JitsiMeetActivity
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions

@@ -1,4 +1,4 @@
-package com.app.bbaumeet
+package com.app.bbaumeet.Ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.Window
+import com.app.bbaumeet.R
 
 class splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
