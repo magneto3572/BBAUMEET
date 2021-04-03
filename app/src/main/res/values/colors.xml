@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#f3f3f3</color>
-    <color name="colorPrimaryDark">#161616</color>
+    <color name="colorPrimaryDark">#f3f3f3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="blue_col">#3A14D4</color>
     <color name="time_col">#FFDD83</color>
